@@ -1,4 +1,4 @@
-# Yii2 adapter for PHPMongo
+# Yii2 adapter for PHPMongo ODM
 
 
 Yii Adapter for [PHPMongo ORM](https://github.com/sokil/php-mongo)
