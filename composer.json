@@ -1,0 +1,20 @@
+{
+  "name": "phpmongokit/php-mongo-yii2",
+  "description": "PHPMongo Yii2 Adapter",
+  "license": "MIT",
+  "homepage": "http://phpmongokit.github.io/",
+  "authors": [
+    {
+      "name": "Dmytro Sokil",
+      "email": "dmytro.sokil@gmail.com"
+    }
+  ],
+  "require": {
+    "sokil/php-mongo": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPMongoKit\\ODM\\Adapter\\Yii2\\": "src/"
+    }
+  }
+}
