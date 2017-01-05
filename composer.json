@@ -1,5 +1,5 @@
 {
-  "name": "phpmongokit/php-mongo-yii2",
+  "name": "phpmongokit/yii2-mongo-odm",
   "description": "PHPMongo Yii2 Adapter",
   "license": "MIT",
   "homepage": "http://phpmongokit.github.io/",
