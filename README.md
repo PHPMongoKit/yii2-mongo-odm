@@ -8,7 +8,7 @@ Installation
 
 You can install library through Composer:
 ```
-composer require phpmongokit/php-mongo-yii2
+composer require phpmongokit/yii2-mongo-odm
 ```
 
 Configuration of Client
