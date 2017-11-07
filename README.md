@@ -1,7 +1,9 @@
 # Yii2 adapter for PHPMongo ODM
 
-
 Yii Adapter for [PHPMongo ORM](https://github.com/sokil/php-mongo)
+
+[![Total Downloads][http://img.shields.io/packagist/dt/phpmongokit/yii2-mongo-odm.svg?1]][https://packagist.org/packages/phpmongokit/yii2-mongo-odm]
+[![Daily Downloads](https://poser.pugx.org/phpmongokit/yii2-mongo-odm/d/daily)](https://packagist.org/packages/phpmongokit/yii2-mongo-odm/stats)
 
 Installation
 ------------
