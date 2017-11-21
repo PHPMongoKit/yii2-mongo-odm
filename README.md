@@ -35,7 +35,7 @@ composer require phpmongokit/yii2-mongo-odm
 
 Library `sokil/php-mongo` depends from old `ext-mongo` so you need to require dependency with `--ignore-platform-reqs` flag:
 ```
-composer require sokil/php-mongo --ignore-platform-reqs
+composer require phpmongokit/yii2-mongo-odm --ignore-platform-reqs
 ```
 
 Also you need to require adapter of old `ext-mongo` API to new `ext-mongodb`:
