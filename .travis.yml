@@ -31,7 +31,7 @@ services: mongodb
 
 before_script:
   - mongod --version
-  - mkdir -p ./share
+  - echo ${PHP_VERSION}
   - if [[ ${PHP_VERSION:0:2} == "5." ]]; then echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
   - if [[ ${PHP_VERSION:0:2} == "5." ]]; then php -r "echo \MongoClient::VERSION . PHP_EOL;"; fi
   - if [[ ${PHP_VERSION:0:2} == "7." ]]; then echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
