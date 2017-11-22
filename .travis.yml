@@ -1,18 +1,42 @@
 sudo: false
 
+dist: trusty
+
 language: php
+
 php:
+  - nightly
+  - 7.2
+  - 7.1
+  - 7.0
   - 5.6
   - 5.5
   - 5.4
-  - 5.3
+
+matrix:
+  allow_failures:
+    - php: nightly
+  include:
+    - php: "5.3"
+      dist: precise
+
+addons:
+  apt:
+    sources:
+      - mongodb-3.2-precise
+    packages:
+      - mongodb-org-server
 
 services: mongodb
 
 before_script:
-  - echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini
-  - "mongo --eval 'db.adminCommand({ setParameter: true, textSearchEnabled : true}).ok === 1'"
+  - phpunit --version
+  - mongod --version
+  - mkdir -p ./share
+  - if [[ ${TRAVIS_PHP_VERSION:0:2} == "5." ]]; then echo "extension = mongo.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
+  - if [[ ${TRAVIS_PHP_VERSION:0:2} == "7." ]]; then echo "extension = mongodb.so" >> ~/.phpenv/versions/$(phpenv version-name)/etc/php.ini; fi
   - composer update --no-interaction
+  - if [[ ${TRAVIS_PHP_VERSION:0:2} == "7." ]]; then composer require "alcaeus/mongo-php-adapter"; fi
   
 script:
   - mongod --version
