@@ -2,6 +2,7 @@
 
 Yii Adapter for [PHPMongo ORM](https://github.com/sokil/php-mongo)
 
+[![Build Status](https://travis-ci.org/phpmongokit/yii2-mongo-odm.png?branch=master&2)](https://travis-ci.org/phpmongokit/yii2-mongo-odm)
 [![Total Downloads](http://img.shields.io/packagist/dt/phpmongokit/yii2-mongo-odm.svg)](https://packagist.org/packages/phpmongokit/yii2-mongo-odm)
 [![Daily Downloads](https://poser.pugx.org/phpmongokit/yii2-mongo-odm/d/daily)](https://packagist.org/packages/phpmongokit/yii2-mongo-odm/stats)
 
@@ -9,7 +10,7 @@ Requirements
 ------------
 
 * PHP 5
-   * PHP 5.3 - PHP 5.6
+  * PHP 5.3 - PHP 5.6
   * [PHP Mongo Extension](https://pecl.php.net/package/mongo) 0.9 or above (Some features require >= 1.5)
 * PHP 7 and HHVM
   * [PHP MongoDB Extension](https://pecl.php.net/package/mongodb) 1.0 or above
