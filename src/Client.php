@@ -2,7 +2,9 @@
 
 namespace PHPMongoKit\ODM\Adapter\Yii2;
 
-class Client
+use yii\base\Component;
+
+class Client extends Component
 {
     private $dsn;
 
